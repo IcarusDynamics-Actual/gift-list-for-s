@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Ideas 🎁</title>
+<style>
+  :root {
+    --bg: #faf7f2;
+    --card-bg: #ffffff;
+    --accent: #c4554d;
+    --text: #2e2a26;
+    --muted: #8a8178;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    text-align: center;
+    padding: 2.5rem 1rem 1.5rem;
+  }
+  header h1 {
+    margin: 0 0 0.4rem;
+    font-size: 2rem;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem 3rem;
+  }
+  section.category {
+    margin-top: 2.5rem;
+  }
+  section.category h2 {
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  }
+  .card .img-wrap {
+    aspect-ratio: 1 / 1;
+    background: #f0ece5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card .img-wrap.placeholder {
+    font-size: 2.5rem;
+  }
+  .card .info {
+    padding: 0.9rem 1rem 1.1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .card .title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    line-height: 1.3;
+  }
+  .card .price {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding-bottom: 2rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Things Stefan Wouldn't Mind Receiving 🎁</h1>
+  <p>A browsable wish list — click any card to view the product</p>
+</header>
+<main>
+
+<section class="category">
+  <h2>⌚ Omega x Swatch</h2>
+  <div class="grid">
+    <a class="card" href="https://www.swatch.com/en-us/mission-to-the-moon-so33m100/SO33M100.html" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">⌚</div>
+      <div class="info"><div class="title">MoonSwatch — Mission to the Moon ⭐ (top pick)</div></div>
+    </a>
+    <a class="card" href="https://www.swatch.com/en-us/mission-to-mars-so33r100/SO33R100.html" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">⌚</div>
+      <div class="info"><div class="title">MoonSwatch — Mission to Mars</div></div>
+    </a>
+    <a class="card" href="https://www.swatch.com/en-us/mission-on-earth-so33g100/SO33G100.html" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">⌚</div>
+      <div class="info"><div class="title">MoonSwatch — Mission on Earth</div></div>
+    </a>
+    <a class="card" href="https://www.swatch.com/en-us/mission-to-the-sun-so33j100/SO33J100.html" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">⌚</div>
+      <div class="info"><div class="title">MoonSwatch — Mission to the Sun</div></div>
+    </a>
+  </div>
+</section>
+
+<section class="category">
+  <h2>🎸 Guitars</h2>
+  <div class="grid">
+    <a class="card" href="https://www.guitarcenter.com/Epiphone/Les-Paul-Modern-Pro-Guitar-Center-Exclusive-Electric-Guitar-Pacific-Blue-1500000455819.gc" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">🎸</div>
+      <div class="info"><div class="title">Epiphone Les Paul Modern Pro — Pacific Blue (Guitar Center Exclusive)</div></div>
+    </a>
+    <a class="card" href="https://www.guitarcenter.com/Schecter-Guitar-Research/C-1-Platinum-Blackout-Electric-Guitar-Satin-Black-1500000409112.gc" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">🎸</div>
+      <div class="info"><div class="title">Schecter C-1 Platinum Blackout — Satin Black</div></div>
+    </a>
+    <a class="card" href="https://www.guitarcenter.com/ESP/LTD-EC-1000-Duncan-Electric-Guitar-Black-Satin-1500000207770.gc" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">🎸</div>
+      <div class="info"><div class="title">ESP LTD EC-1000 Duncan — Black Satin</div></div>
+    </a>
+  </div>
+</section>
+
+<section class="category">
+  <h2>⌚ Watches &amp; Clocks</h2>
+  <div class="grid">
+    <a class="card" href="https://www.mvmt.com/sartorial-sport/sartorial-sport/28000368.html" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dw47d0303b/images/products/28000368_fr.jpg?sw=660&sh=660" alt="MVMT Legacy Slim Sartorial Sport" loading="lazy"></div>
+      <div class="info">
+        <div class="title">MVMT Legacy Slim Sartorial Sport (42mm) — "reminds me of Fontainebleau"</div>
+        <div class="price">$134.40</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.sternglas.com/products/hamburg-chrono-silver" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.sternglas.com/cdn/shop/files/S01-HC10-VI11_HH_Chrono_silber_vintage_mokka_frontal_grau_1500x.jpg?v=1770024468&width=660" alt="Sternglas Hamburg Chrono Silver" loading="lazy"></div>
+        <div class="info">
+        <div class="title">Sternglas Hamburg Chrono — Silver</div>
+        <div class="price">€349</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.sternglas.com/products/hamburg-chrono-edition-kueste" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.sternglas.com/cdn/shop/files/S01-HC06-EB05_Hamburg_Chrono_Edition_Kuste_dunkelblau_silber_Editionsband_Kuste_nero_orange_frontal_grau_1500x.jpg?v=1748861743&width=660" alt="Sternglas Hamburg Chrono Edition Küste" loading="lazy"></div>
+      <div class="info">
+        <div class="title">Sternglas Hamburg Chrono — Edition Küste</div>
+        <div class="price">€349</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.shinola.com/products/runwell-sport-chronograph-watch-midnight-blue" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.shinola.com/cdn/shop/files/e583ff849eb386bb429185db690aceae4cf01d115d4fea4099ed1c5440c42f1e_00603dd8-00be-4994-8f37-e0d4d343b7e2.png?width=660" alt="Shinola Runwell Sport Chronograph" loading="lazy"></div>
+      <div class="info">
+        <div class="title">Shinola Runwell Sport Chronograph — Midnight Blue</div>
+        <div class="price">$1,295</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.shinola.com/products/runwell-watch-white" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.shinola.com/cdn/shop/files/f44e6b7f24963bf42f527d3e7728f56aecb5a19c8b0e825b1bf3dcefd91e5d0d.png?v=1775504722&width=660" alt="Shinola Runwell Watch White" loading="lazy"></div>
+      <div class="info">
+        <div class="title">Shinola Runwell Watch — White</div>
+        <div class="price">$750</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.shinola.com/products/runwell-chronograph-watch-midnight-blue" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.shinola.com/cdn/shop/files/340c204136e1c28631ff8ac53651b8d4bf505f78ac7c5df3989227799d61c8c4.png?v=1775505229&width=660" alt="Shinola Runwell Chronograph Watch Midnight Blue" loading="lazy"></div>
+      <div class="info">
+        <div class="title">Shinola Runwell Chronograph Watch — Midnight Blue</div>
+        <div class="price">$995</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.shinola.com/products/6-runwell-clock-black-1" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.shinola.com/cdn/shop/files/0e5a7e4314d4628c0576de9cf026c41fb3277587b8dd1e82df5d17848df32c47.png?v=1770279220&width=660" alt='Shinola 6" Runwell Clock Black' loading="lazy"></div>
+      <div class="info">
+        <div class="title">Shinola 6" Runwell Clock — Black</div>
+        <div class="price">$495</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="category">
+  <h2>🖊️ Tech &amp; Stationery</h2>
+  <div class="grid">
+    <a class="card" href="https://remarkable.com/products/remarkable-paper/pro-move" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">📓</div>
+      <div class="info">
+        <div class="title">reMarkable Paper Pro Move (e-notebook)</div>
+        <div class="price">from $449</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.muji.us/collections/notebook/products/dark-gray-double-ring-lined-notebook?variant=41253842878654" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">📔</div>
+      <div class="info">
+        <div class="title">MUJI Dark Gray Double Ring Lined Notebook</div>
+        <div class="price">from $1.50</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.muji.us/collections/pen-sets/products/aluminum-fountain-pen-set-nb43cc1a?variant=45231183069374" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.muji.us/cdn/shop/files/4550344650394_org_700x.jpg?v=1752878431&width=660" alt="MUJI Aluminum Fountain Pen Set" loading="lazy"></div>
+      <div class="info">
+        <div class="title">MUJI Aluminum Fountain Pen Set</div>
+        <div class="price">$28.90</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.muji.us/collections/desk-accessories/products/stapler-without-staples-s308" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">📎</div>
+      <div class="info">
+        <div class="title">MUJI Stapler Without Staples</div>
+        <div class="price">$8.90</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.muji.us/collections/cases/products/aluminum-card-holder-lock-type-large" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://www.muji.us/cdn/shop/products/4550182998269_org_700x.jpg?v=1762446104&width=660" alt="MUJI Aluminum Card Holder Lock Type Large" loading="lazy"></div>
+      <div class="info">
+        <div class="title">MUJI Aluminum Card Holder (Lock Type, Large)</div>
+        <div class="price">$6.90</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="category">
+  <h2>😄 Just for Fun</h2>
+  <div class="grid">
+    <a class="card" href="https://houndtees.com.au/en-us/products/speed-noodle-human-sweater-copy" target="_blank" rel="noopener">
+      <div class="img-wrap"><img src="https://houndtees.com.au/cdn/shop/files/SpeedNoodle_HalfPrice_Sweaters.jpg?v=1763428813&width=660" alt="SPEED Noodle Human Sweater" loading="lazy"></div>
+      <div class="info">
+        <div class="title">"SPEED" Noodle Human Sweater</div>
+        <div class="price">$39.00 (was $77.00)</div>
+      </div>
+    </a>
+    <a class="card" href="https://www.tiktok.com/t/ZP922KrqU1qDD-d4hNz/" target="_blank" rel="noopener">
+      <div class="img-wrap placeholder">🎵</div>
+      <div class="info"><div class="title">TikTok find (link in note)</div></div>
+    </a>
+  </div>
+</section>
+
+</main>
+<footer>Made with ❤️ — last updated <span id="updated"></span></footer>
+<script>
+  document.getElementById('updated').textContent = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+</body>
+</html>
